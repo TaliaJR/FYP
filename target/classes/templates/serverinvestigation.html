@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Server investigation</title>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background-color: dodgerblue;
+        }
+        h1
+        {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family:Calibri;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        body
+        {
+            display: inline;
+            font-family:Calibri;
+
+        }
+
+        ul, section {
+            float:left;
+            display: inline-block;
+        }
+
+        ul{
+            width:20%;
+            font-family:Calibri;
+            font-size:15px;
+            list-style-type: none;
+
+        }
+
+        h3
+        {
+            font-family:Calibri;
+            width: 20%;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        .line{
+            width: auto;
+            height:30px;
+        }
+
+        .smallline
+        {
+            width: auto;
+            height: 15px;
+        }
+
+        .shortline
+        {
+            width: 20%;
+            height: 15px
+
+        }
+
+        .grey{
+            background: darkgrey;
+        }
+        .orange{
+            background:darkorange;
+        }
+    </style>
+</head>
+<div class="line grey"></div>
+
+<a href="/">
+    <img src="http://86.16.201.126/home.jpg" style="float: left">
+</a>
+
+<img src="http://86.16.201.126/logo.png" class="center" >
+
+<div class="smallline orange"></div>
+<h1> Email server investigation </h1>
+<h3>Contents</h3>
+
+<div class ="shortline grey"></div>
+<ul>
+    <li><a href="email">What is an email?</a></li>
+    <li><a href="emailphishing">What is email phishing?</a></li>
+    <li><a href="emailheader">The email header</a></li>
+    <li><a href="emailbody">The email body</a></li>
+    <li><a href="metadata">Email metadata</a></li>
+    <li><a href="serverinvestigation">Email server investigation</a></li>
+    <li><a href="hiddendata">Hidden data found inside an email</a></li>
+    <li><a href="emailforensictools">Email forensic tools</a></li>
+    <li><a href="guidelinesandstandards">Guideline and standards</a></li>
+</ul>
+<p> When an e-mail is sent, it is not sent directly to the recipient's mail box but to the sender's SMTP server instead.
+From here, the SMTP server sends the e-mail to the recipient's e-mail server. Due to SMTP's servers not authenicating
+the sender(the e-mail address is not checked if it is valid or not), some information in the e-mail header can be forged,
+making it difficult to find the real identity of the sender. If the sender's information is valid, data relating to the
+owner such as their credit card information can be found within their SMTP server which can help reveal their identity.
+Server investigation uses a lot of resources due to the amount of processing needed to find any useful information.
+There are ways of checking whether an e-mail is valid by looking at the metadata in the e-mail header. For example, if
+the e-mail claims that it was sent from a e-mail address with a yahoo domain but the e-mail server information shows
+that the e-mail was first received by a google e-mail server, it is likely that the e-mail address was forged. Another
+example to look out for would be if a e-mail was sent from an e-mail address of a British bank but the IP address shows
+    that it was sent from an IP address in Russia, the e-mail address is likely to have been forged. Banks can
+have IT resources in different locations so in this case it would be useful to investigate where they can operate from.</p>
+<div class="footer">
+    <p> <br> </p>
+</div>
+</body>
+</html>

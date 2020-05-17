@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Metadata</title>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background-color: dodgerblue;
+        }
+        h1
+        {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family:Calibri;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        body
+        {
+            display: inline;
+            font-family:Calibri;
+
+        }
+
+        ul, section {
+            float:left;
+            display: inline-block;
+        }
+
+        ul{
+            width:20%;
+            font-family:Calibri;
+            font-size:15px;
+            list-style-type: none;
+
+        }
+
+        h3
+        {
+            font-family:Calibri;
+            width: 20%;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        .line{
+            width: auto;
+            height:30px;
+        }
+
+        .smallline
+        {
+            width: auto;
+            height: 15px;
+        }
+
+        .shortline
+        {
+            width: 20%;
+            height: 15px
+
+        }
+
+        .grey{
+            background: darkgrey;
+        }
+        .orange{
+            background:darkorange;
+        }
+    </style>
+</head>
+<body>
+<div class="line grey"></div>
+
+<a href="/">
+    <img src="http://86.16.201.126/home.jpg" style="float: left">
+</a>
+
+<img src="http://86.16.201.126/logo.png" class="center" >
+
+<div class="smallline orange"></div>
+<h1> Email metadata </h1>
+<h3>Contents</h3>
+
+<div class ="shortline grey"></div>
+<ul>
+    <li><a href="email">What is an email?</a></li>
+    <li><a href="emailphishing">What is email phishing?</a></li>
+    <li><a href="emailheader">The email header</a></li>
+    <li><a href="emailbody">The email body</a></li>
+    <li><a href="metadata">Email metadata</a></li>
+    <li><a href="serverinvestigation">Email server investigation</a></li>
+    <li><a href="hiddendata">Hidden data found inside an email</a></li>
+    <li><a href="emailforensictools">Email forensic tools</a></li>
+    <li><a href="guidelinesandstandards">Guideline and standards</a></li>
+</ul>
+<p> The metadata of an e-mail can be  found within the email header and body. The e-mail header stores the sender's
+    e-mail address, the sender's e-mail server information and the timestamps of when the e-mail was sent and received.
+    The body of an e-mail address stores the actual message that is sent and any attachment's sent along with it.
+    If the sender's e-mail address is valid (the e-mail address is the same one they originally sent the message from),
+    it can be used to gather hints about the sender such as their name, birth date and location. With the help of the
+    sender's e-mail server, you may also be able to gather personal information about the sender (if they signed up with
+    valid information). The sender's IP address may help you track down where the sender lives and other personal
+    details with help from their internet service provider. If the sender has included a link in the e-mail body to a
+    website that they own or have included their bank account details, these can be used to find the identity of the
+    sender with help from the relevant companies. To see where this information can be found, please visit the pages
+    "The e-mail header" and "The e-mail body".
+</p>
+<div class="footer">
+    <p> <br> </p>
+</div>
+</body>
+</html>
